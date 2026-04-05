@@ -1,6 +1,722 @@
+{% doc %}
+  @prompt
+    benefits tables us vs others
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-benefits-table-{{ ai_gen_id }} {
+    display: block;
+    width: {{ block.settings.desktop_width_percent }}%;
+    max-width: 100%;
+    padding: 40px 20px;
+    background-color: {{ block.settings.background_color }};
+  }
+
+  .ai-benefits-table__container-{{ ai_gen_id }} {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .ai-benefits-table__header-{{ ai_gen_id }} {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .ai-benefits-table__title-{{ ai_gen_id }} {
+    font-size: {{ block.settings.title_size }}px;
+    color: {{ block.settings.text_color }};
+    margin: 0 0 12px;
+  }
+
+  .ai-benefits-table__subtitle-{{ ai_gen_id }} {
+    font-size: {{ block.settings.subtitle_size }}px;
+    color: {{ block.settings.text_color }};
+    opacity: 0.8;
+    margin: 0;
+  }
+
+  .ai-benefits-table__wrapper-{{ ai_gen_id }} {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .ai-benefits-table__table-{{ ai_gen_id }} {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background-color: {{ block.settings.table_bg_color }};
+    border-radius: {{ block.settings.border_radius }}px;
+    overflow: hidden;
+  }
+
+  .ai-benefits-table__thead-{{ ai_gen_id }} {
+    background-color: {{ block.settings.header_bg_color }};
+  }
+
+  .ai-benefits-table__th-{{ ai_gen_id }} {
+    padding: 20px 16px;
+    text-align: center;
+    font-size: {{ block.settings.header_text_size }}px;
+    color: {{ block.settings.header_text_color }};
+    font-weight: 600;
+    border-bottom: 2px solid {{ block.settings.border_color }};
+  }
+
+  .ai-benefits-table__th-{{ ai_gen_id }}:first-child {
+    text-align: left;
+    width: 40%;
+  }
+
+  .ai-benefits-table__th--highlight-{{ ai_gen_id }} {
+    background-color: {{ block.settings.highlight_bg_color }};
+    color: {{ block.settings.highlight_text_color }};
+    position: relative;
+  }
+
+  .ai-benefits-table__badge-{{ ai_gen_id }} {
+    display: inline-block;
+    background-color: {{ block.settings.badge_bg_color }};
+    color: {{ block.settings.badge_text_color }};
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 12px;
+    margin-top: 6px;
+    font-weight: 600;
+  }
+
+  .ai-benefits-table__tr-{{ ai_gen_id }} {
+    border-bottom: 1px solid {{ block.settings.border_color }};
+  }
+
+  .ai-benefits-table__tr-{{ ai_gen_id }}:last-child {
+    border-bottom: none;
+  }
+
+  .ai-benefits-table__td-{{ ai_gen_id }} {
+    padding: 20px 16px;
+    text-align: center;
+    font-size: {{ block.settings.body_text_size }}px;
+    color: {{ block.settings.text_color }};
+    border-right: 1px solid {{ block.settings.border_color }};
+  }
+
+  .ai-benefits-table__td-{{ ai_gen_id }}:first-child {
+    text-align: left;
+    font-weight: 500;
+    border-right: 1px solid {{ block.settings.border_color }};
+  }
+
+  .ai-benefits-table__td-{{ ai_gen_id }}:last-child {
+    border-right: none;
+  }
+
+  .ai-benefits-table__td--highlight-{{ ai_gen_id }} {
+    background-color: {{ block.settings.highlight_cell_bg }};
+  }
+
+  .ai-benefits-table__icon-{{ ai_gen_id }} {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ai-benefits-table__icon-{{ ai_gen_id }} svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .ai-benefits-table__checkmark-{{ ai_gen_id }} {
+    color: {{ block.settings.checkmark_color }};
+  }
+
+  .ai-benefits-table__cross-{{ ai_gen_id }} {
+    color: {{ block.settings.cross_color }};
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-benefits-table__th-{{ ai_gen_id }},
+    .ai-benefits-table__td-{{ ai_gen_id }} {
+      padding: 16px 12px;
+      font-size: 14px;
+    }
+
+    .ai-benefits-table__th-{{ ai_gen_id }}:first-child,
+    .ai-benefits-table__td-{{ ai_gen_id }}:first-child {
+      min-width: 150px;
+    }
+
+    .ai-benefits-table__title-{{ ai_gen_id }} {
+      font-size: {{ block.settings.title_size | times: 0.8 }}px;
+    }
+
+    .ai-benefits-table__subtitle-{{ ai_gen_id }} {
+      font-size: {{ block.settings.subtitle_size | times: 0.9 }}px;
+    }
+  }
+{% endstyle %}
+
+<benefits-table-{{ ai_gen_id }} class="ai-benefits-table-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-benefits-table__container-{{ ai_gen_id }}">
+    {% if block.settings.title != blank or block.settings.subtitle != blank %}
+      <div class="ai-benefits-table__header-{{ ai_gen_id }}">
+        {% if block.settings.title != blank %}
+          <h2 class="ai-benefits-table__title-{{ ai_gen_id }}">{{ block.settings.title }}</h2>
+        {% endif %}
+        {% if block.settings.subtitle != blank %}
+          <p class="ai-benefits-table__subtitle-{{ ai_gen_id }}">{{ block.settings.subtitle }}</p>
+        {% endif %}
+      </div>
+    {% endif %}
+
+    <div class="ai-benefits-table__wrapper-{{ ai_gen_id }}">
+      <table class="ai-benefits-table__table-{{ ai_gen_id }}">
+        <thead class="ai-benefits-table__thead-{{ ai_gen_id }}">
+          <tr>
+            <th class="ai-benefits-table__th-{{ ai_gen_id }}">{{ block.settings.feature_column_label }}</th>
+            <th class="ai-benefits-table__th-{{ ai_gen_id }} ai-benefits-table__th--highlight-{{ ai_gen_id }}">
+              {{ block.settings.us_column_label }}
+              {% if block.settings.show_badge %}
+                <div class="ai-benefits-table__badge-{{ ai_gen_id }}">{{ block.settings.badge_text }}</div>
+              {% endif %}
+            </th>
+            <th class="ai-benefits-table__th-{{ ai_gen_id }}">{{ block.settings.others_column_label }}</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for i in (1..8) %}
+            {% liquid
+              assign feature_key = 'feature_' | append: i
+              assign us_value_key = 'us_value_' | append: i
+              assign others_value_key = 'others_value_' | append: i
+
+              assign feature = block.settings[feature_key]
+              assign us_value = block.settings[us_value_key]
+              assign others_value = block.settings[others_value_key]
+            %}
+
+            {% if feature != blank %}
+              <tr class="ai-benefits-table__tr-{{ ai_gen_id }}">
+                <td class="ai-benefits-table__td-{{ ai_gen_id }}">{{ feature }}</td>
+                <td class="ai-benefits-table__td-{{ ai_gen_id }} ai-benefits-table__td--highlight-{{ ai_gen_id }}">
+                  {% if us_value == 'check' %}
+                    <span class="ai-benefits-table__icon-{{ ai_gen_id }} ai-benefits-table__checkmark-{{ ai_gen_id }}">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                      </svg>
+                    </span>
+                  {% elsif us_value == 'cross' %}
+                    <span class="ai-benefits-table__icon-{{ ai_gen_id }} ai-benefits-table__cross-{{ ai_gen_id }}">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                      </svg>
+                    </span>
+                  {% else %}
+                    {{ us_value }}
+                  {% endif %}
+                </td>
+                <td class="ai-benefits-table__td-{{ ai_gen_id }}">
+                  {% if others_value == 'check' %}
+                    <span class="ai-benefits-table__icon-{{ ai_gen_id }} ai-benefits-table__checkmark-{{ ai_gen_id }}">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                      </svg>
+                    </span>
+                  {% elsif others_value == 'cross' %}
+                    <span class="ai-benefits-table__icon-{{ ai_gen_id }} ai-benefits-table__cross-{{ ai_gen_id }}">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                      </svg>
+                    </span>
+                  {% else %}
+                    {{ others_value }}
+                  {% endif %}
+                </td>
+              </tr>
+            {% endif %}
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</benefits-table-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class BenefitsTable{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+      }
+
+      connectedCallback() {
+      }
+    }
+
+    customElements.define('benefits-table-{{ ai_gen_id }}', BenefitsTable{{ ai_gen_id }});
+  })();
+</script>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Benefits comparison table",
+  "tag": null,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Heading"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Why choose us?"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtitle",
+      "default": "See how we compare to the competition"
+    },
+    {
+      "type": "range",
+      "id": "title_size",
+      "label": "Title size",
+      "min": 20,
+      "max": 60,
+      "step": 2,
+      "unit": "px",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "subtitle_size",
+      "label": "Subtitle size",
+      "min": 12,
+      "max": 30,
+      "step": 1,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "header",
+      "content": "Table columns"
+    },
+    {
+      "type": "text",
+      "id": "feature_column_label",
+      "label": "Feature column label",
+      "default": "Features"
+    },
+    {
+      "type": "text",
+      "id": "us_column_label",
+      "label": "Us column label",
+      "default": "Us"
+    },
+    {
+      "type": "text",
+      "id": "others_column_label",
+      "label": "Others column label",
+      "default": "Others"
+    },
+    {
+      "type": "header",
+      "content": "Badge"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_badge",
+      "label": "Show badge",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "badge_text",
+      "label": "Badge text",
+      "default": "Best value"
+    },
+    {
+      "type": "header",
+      "content": "Feature 1"
+    },
+    {
+      "type": "text",
+      "id": "feature_1",
+      "label": "Feature name",
+      "default": "Premium quality"
+    },
+    {
+      "type": "select",
+      "id": "us_value_1",
+      "label": "Us value",
+      "options": [
+        { "value": "check", "label": "Checkmark" },
+        { "value": "cross", "label": "Cross" },
+        { "value": "custom", "label": "Custom text" }
+      ],
+      "default": "check"
+    },
+    {
+      "type": "select",
+      "id": "others_value_1",
+      "label": "Others value",
+      "options": [
+        { "value": "check", "label": "Checkmark" },
+        { "value": "cross", "label": "Cross" },
+        { "value": "custom", "label": "Custom text" }
+      ],
+      "default": "cross"
+    },
+    {
+      "type": "header",
+      "content": "Feature 2"
+    },
+    {
+      "type": "text",
+      "id": "feature_2",
+      "label": "Feature name",
+      "default": "Free shipping"
+    },
+    {
+      "type": "select",
+      "id": "us_value_2",
+      "label": "Us value",
+      "options": [
+        { "value": "check", "label": "Checkmark" },
+        { "value": "cross", "label": "Cross" },
+        { "value": "custom", "label": "Custom text" }
+      ],
+      "default": "check"
+    },
+    {
+      "type": "select",
+      "id": "others_value_2",
+      "label": "Others value",
+      "options": [
+        { "value": "check", "label": "Checkmark" },
+        { "value": "cross", "label": "Cross" },
+        { "value": "custom", "label": "Custom text" }
+      ],
+      "default": "cross"
+    },
+    {
+      "type": "header",
+      "content": "Feature 3"
+    },
+    {
+      "type": "text",
+      "id": "feature_3",
+      "label": "Feature name",
+      "default": "30-day guarantee"
+    },
+    {
+      "type": "select",
+      "id": "us_value_3",
+      "label": "Us value",
+      "options": [
+        { "value": "check", "label": "Checkmark" },
+        { "value": "cross", "label": "Cross" },
+        { "value": "custom", "label": "Custom text" }
+      ],
+      "default": "check"
+    },
+    {
+      "type": "select",
+      "id": "others_value_3",
+      "label": "Others value",
+      "options": [
+        { "value": "check", "label": "Checkmark" },
+        { "value": "cross", "label": "Cross" },
+        { "value": "custom", "label": "Custom text" }
+      ],
+      "default": "cross"
+    },
+    {
+      "type": "header",
+      "content": "Feature 4"
+    },
+    {
+      "type": "text",
+      "id": "feature_4",
+      "label": "Feature name",
+      "default": "24/7 support"
+    },
+    {
+      "type": "select",
+      "id": "us_value_4",
+      "label": "Us value",
+      "options": [
+        { "value": "check", "label": "Checkmark" },
+        { "value": "cross", "label": "Cross" },
+        { "value": "custom", "label": "Custom text" }
+      ],
+      "default": "check"
+    },
+    {
+      "type": "select",
+      "id": "others_value_4",
+      "label": "Others value",
+      "options": [
+        { "value": "check", "label": "Checkmark" },
+        { "value": "cross", "label": "Cross" },
+        { "value": "custom", "label": "Custom text" }
+      ],
+      "default": "cross"
+    },
+    {
+      "type": "header",
+      "content": "Feature 5"
+    },
+    {
+      "type": "text",
+      "id": "feature_5",
+      "label": "Feature name",
+      "default": "Eco-friendly packaging"
+    },
+    {
+      "type": "select",
+      "id": "us_value_5",
+      "label": "Us value",
+      "options": [
+        { "value": "check", "label": "Checkmark" },
+        { "value": "cross", "label": "Cross" },
+        { "value": "custom", "label": "Custom text" }
+      ],
+      "default": "check"
+    },
+    {
+      "type": "select",
+      "id": "others_value_5",
+      "label": "Others value",
+      "options": [
+        { "value": "check", "label": "Checkmark" },
+        { "value": "cross", "label": "Cross" },
+        { "value": "custom", "label": "Custom text" }
+      ],
+      "default": "cross"
+    },
+    {
+      "type": "header",
+      "content": "Feature 6"
+    },
+    {
+      "type": "text",
+      "id": "feature_6",
+      "label": "Feature name"
+    },
+    {
+      "type": "select",
+      "id": "us_value_6",
+      "label": "Us value",
+      "options": [
+        { "value": "check", "label": "Checkmark" },
+        { "value": "cross", "label": "Cross" },
+        { "value": "custom", "label": "Custom text" }
+      ],
+      "default": "check"
+    },
+    {
+      "type": "select",
+      "id": "others_value_6",
+      "label": "Others value",
+      "options": [
+        { "value": "check", "label": "Checkmark" },
+        { "value": "cross", "label": "Cross" },
+        { "value": "custom", "label": "Custom text" }
+      ],
+      "default": "cross"
+    },
+    {
+      "type": "header",
+      "content": "Feature 7"
+    },
+    {
+      "type": "text",
+      "id": "feature_7",
+      "label": "Feature name"
+    },
+    {
+      "type": "select",
+      "id": "us_value_7",
+      "label": "Us value",
+      "options": [
+        { "value": "check", "label": "Checkmark" },
+        { "value": "cross", "label": "Cross" },
+        { "value": "custom", "label": "Custom text" }
+      ],
+      "default": "check"
+    },
+    {
+      "type": "select",
+      "id": "others_value_7",
+      "label": "Others value",
+      "options": [
+        { "value": "check", "label": "Checkmark" },
+        { "value": "cross", "label": "Cross" },
+        { "value": "custom", "label": "Custom text" }
+      ],
+      "default": "cross"
+    },
+    {
+      "type": "header",
+      "content": "Feature 8"
+    },
+    {
+      "type": "text",
+      "id": "feature_8",
+      "label": "Feature name"
+    },
+    {
+      "type": "select",
+      "id": "us_value_8",
+      "label": "Us value",
+      "options": [
+        { "value": "check", "label": "Checkmark" },
+        { "value": "cross", "label": "Cross" },
+        { "value": "custom", "label": "Custom text" }
+      ],
+      "default": "check"
+    },
+    {
+      "type": "select",
+      "id": "others_value_8",
+      "label": "Others value",
+      "options": [
+        { "value": "check", "label": "Checkmark" },
+        { "value": "cross", "label": "Cross" },
+        { "value": "custom", "label": "Custom text" }
+      ],
+      "default": "cross"
+    },
+    {
+      "type": "header",
+      "content": "Style"
+    },
+    {
+      "type": "range",
+      "id": "desktop_width_percent",
+      "label": "Desktop width",
+      "min": 50,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 100
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "table_bg_color",
+      "label": "Table background",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "header_bg_color",
+      "label": "Header background",
+      "default": "#f7f7f7"
+    },
+    {
+      "type": "color",
+      "id": "header_text_color",
+      "label": "Header text",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "highlight_bg_color",
+      "label": "Highlight column header",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "highlight_text_color",
+      "label": "Highlight header text",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "highlight_cell_bg",
+      "label": "Highlight cell background",
+      "default": "#f9f9f9"
+    },
+    {
+      "type": "color",
+      "id": "border_color",
+      "label": "Border color",
+      "default": "#e5e5e5"
+    },
+    {
+      "type": "color",
+      "id": "badge_bg_color",
+      "label": "Badge background",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "badge_text_color",
+      "label": "Badge text",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "checkmark_color",
+      "label": "Checkmark color",
+      "default": "#008060"
+    },
+    {
+      "type": "color",
+      "id": "cross_color",
+      "label": "Cross color",
+      "default": "#D82C0D"
+    },
+    {
+      "type": "range",
+      "id": "border_radius",
+      "label": "Border radius",
+      "min": 0,
+      "max": 20,
+      "step": 2,
+      "unit": "px",
+      "default": 8
+    },
+    {
+      "type": "range",
+      "id": "header_text_size",
+      "label": "Header text size",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "body_text_size",
+      "label": "Body text size",
+      "min": 12,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "default": 15
+    }
+  ],
+  "presets": [
+    {
+      "name": "Benefits comparison table"
+    }
+  ]
+}
 {% endschema %}
