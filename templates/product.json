@@ -357,41 +357,122 @@
         "padding_bottom": 36
       }
     },
+    "1775422105f87e595b": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_0264287_6eBG9g": {
+          "type": "ai_gen_block_0264287",
+          "settings": {
+            "title": "Why choose us?",
+            "subtitle": "",
+            "title_size": 36,
+            "subtitle_size": 16,
+            "feature_column_label": "Features",
+            "us_column_label": "Us",
+            "others_column_label": "Others",
+            "show_badge": false,
+            "badge_text": "Best value",
+            "feature_1": "Deep Pore Cleansing",
+            "us_value_1": "check",
+            "others_value_1": "cross",
+            "feature_2": "Adjustable Suction Levels",
+            "us_value_2": "check",
+            "others_value_2": "cross",
+            "feature_3": "Multiple Suction Heads",
+            "us_value_3": "check",
+            "others_value_3": "cross",
+            "feature_4": "Safe & Skin-Friendly",
+            "us_value_4": "check",
+            "others_value_4": "cross",
+            "feature_5": "Portable & Easy to Use",
+            "us_value_5": "check",
+            "others_value_5": "cross",
+            "feature_6": "",
+            "us_value_6": "check",
+            "others_value_6": "cross",
+            "feature_7": "",
+            "us_value_7": "check",
+            "others_value_7": "cross",
+            "feature_8": "",
+            "us_value_8": "check",
+            "others_value_8": "cross",
+            "desktop_width_percent": 100,
+            "background_color": "#ffffff",
+            "text_color": "#000000",
+            "table_bg_color": "#ffffff",
+            "header_bg_color": "#f7f7f7",
+            "header_text_color": "#000000",
+            "highlight_bg_color": "#000000",
+            "highlight_text_color": "#ffffff",
+            "highlight_cell_bg": "#f9f9f9",
+            "border_color": "#e5e5e5",
+            "badge_bg_color": "#ffffff",
+            "badge_text_color": "#000000",
+            "checkmark_color": "#008060",
+            "cross_color": "#D82C0D",
+            "border_radius": 8,
+            "header_text_size": 16,
+            "body_text_size": 15
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_0264287_6eBG9g"
+      ],
+      "settings": {}
+    },
     "section_faq_FjGLfx": {
       "type": "section-faq",
       "blocks": {
         "text_TK7FzL": {
           "type": "text",
           "settings": {
-            "title": "Frequently asked question",
-            "content": "<p>Share details about your shipping policies, item returns, or customer service.</p>"
+            "title": "Is it safe for all skin types?",
+            "content": "<p>Yes, it is designed to be safe for all skin types. Just start with the lowest suction level, especially if you have sensitive skin.</p>"
           }
         },
         "text_LbRJbx": {
           "type": "text",
           "settings": {
-            "title": "Frequently asked question",
-            "content": "<p>Share details about your shipping policies, item returns, or customer service.</p>"
+            "title": "Does it hurt?",
+            "content": "<p>No, the device uses gentle suction technology. When used correctly, it is painless and comfortable.</p>"
           }
         },
         "text_8Efrft": {
           "type": "text",
           "settings": {
-            "title": "Frequently asked question",
-            "content": "<p>Share details about your shipping policies, item returns, or customer service.</p>"
+            "title": "How often should I use it?",
+            "content": "<p>It’s recommended to use it <strong>1–2 times per week</strong> to avoid over-irritating your skin.</p>"
+          }
+        },
+        "text_7fxR7Y": {
+          "type": "text",
+          "settings": {
+            "title": "Can it remove blackheads completely?",
+            "content": "<p>It helps reduce and remove blackheads and impurities effectively, but regular use and proper skincare will give the best results.</p>"
+          }
+        },
+        "text_LRAQhG": {
+          "type": "text",
+          "settings": {
+            "title": "Do I need to prepare my skin before using it?",
+            "content": "<p>Yes, for best results, use it after a warm shower or steam your face to open up the pores.</p>"
           }
         }
       },
       "block_order": [
         "text_TK7FzL",
         "text_LbRJbx",
-        "text_8Efrft"
+        "text_8Efrft",
+        "text_7fxR7Y",
+        "text_LRAQhG"
       ],
       "name": "Accordion group",
       "settings": {
-        "title": "",
-        "title_align": "text-left",
-        "title_size": 4,
+        "title": "Faq's",
+        "title_align": "text-center",
+        "title_size": 11,
         "heading_size": 5,
         "text_size": 5,
         "text_color": "text--neutral",
@@ -476,6 +557,7 @@
     "image-with-text-2",
     "section_announcement_4KhpwN",
     "related",
+    "1775422105f87e595b",
     "section_faq_FjGLfx",
     "17754215158e2cc0d8",
     "section_icons_bXK8zV"
