@@ -1,0 +1,82 @@
+
+
+
+@font-face {
+  font-family: Ovo;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("//fba8eb-b5.myshopify.com/cdn/fonts/ovo/ovo_n4.d4662dd1e5e1c74c64a3a15f50c51f82bd9ade07.woff2?h1=ZmJhOGViLWI1LmFjY291bnQubXlzaG9waWZ5LmNvbQ&h2=dGhlbWVzY2x1Yi54eXo&hmac=6237b21c8109dde9c4c1e9865275efe57b55366c31b21c62bba572a501dc4a03") format("woff2"),
+       url("//fba8eb-b5.myshopify.com/cdn/fonts/ovo/ovo_n4.9f9fd71531ae16cc1b491b752b0b48dae8352342.woff?h1=ZmJhOGViLWI1LmFjY291bnQubXlzaG9waWZ5LmNvbQ&h2=dGhlbWVzY2x1Yi54eXo&hmac=40a9e6b32d2eaf22ffa767249e8521648038260ffd3e03bfb316c0302e506d14") format("woff");
+}
+
+@font-face {
+  font-family: "Avenir Next";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("//fba8eb-b5.myshopify.com/cdn/fonts/avenir_next/avenirnext_n4.7fd0287595be20cd5a683102bf49d073b6abf144.woff2?h1=ZmJhOGViLWI1LmFjY291bnQubXlzaG9waWZ5LmNvbQ&h2=dGhlbWVzY2x1Yi54eXo&hmac=a6f6ad0dfe2450f02caf60d70ef0100fab11f4ea8ae222259b6f64a2080e1641") format("woff2"),
+       url("//fba8eb-b5.myshopify.com/cdn/fonts/avenir_next/avenirnext_n4.a26a334a0852627a5f36b195112385b0cd700077.woff?h1=ZmJhOGViLWI1LmFjY291bnQubXlzaG9waWZ5LmNvbQ&h2=dGhlbWVzY2x1Yi54eXo&hmac=0fbae192ada7619717cef39850de558ba779db03166b05877973b80ec71c2406") format("woff");
+}
+
+@font-face {
+  font-family: "Avenir Next";
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: url("//fba8eb-b5.myshopify.com/cdn/fonts/avenir_next/avenirnext_n5.972a96b7a049f12c89d6d1cd0e1b6c9211f7ba14.woff2?h1=ZmJhOGViLWI1LmFjY291bnQubXlzaG9waWZ5LmNvbQ&h2=dGhlbWVzY2x1Yi54eXo&hmac=7921d4c8254f4e81b15c17cd8c2a9a8b2f3fdfe1a6e7001d40f1dc0f8bae770e") format("woff2"),
+       url("//fba8eb-b5.myshopify.com/cdn/fonts/avenir_next/avenirnext_n5.9e88d20fa9eb66ba268ac60ab013006ef69a310a.woff?h1=ZmJhOGViLWI1LmFjY291bnQubXlzaG9waWZ5LmNvbQ&h2=dGhlbWVzY2x1Yi54eXo&hmac=e0dd1ff399b3164154e41c9d62d2a7b1e2adb84ab1be4d15348255d8bf1f38e0") format("woff");
+}
+
+
+
+
+
+  @font-face {
+  font-family: "Avenir Next";
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  src: url("//fba8eb-b5.myshopify.com/cdn/fonts/avenir_next/avenirnext_n6.08f6a09127d450aa39c74986de08fd8fa84e6a11.woff2?h1=ZmJhOGViLWI1LmFjY291bnQubXlzaG9waWZ5LmNvbQ&h2=dGhlbWVzY2x1Yi54eXo&hmac=0f2d98380a26ef4a3a1135e85fabb302eede2be55b6974eb262123ba07fd3380") format("woff2"),
+       url("//fba8eb-b5.myshopify.com/cdn/fonts/avenir_next/avenirnext_n6.bd2f76897d6f40c767db7c40226916ec7b6ffc65.woff?h1=ZmJhOGViLWI1LmFjY291bnQubXlzaG9waWZ5LmNvbQ&h2=dGhlbWVzY2x1Yi54eXo&hmac=08a9fcfafb80d682d372d8670980f138fe1883fbde1e8326f3a5afa10596014c") format("woff");
+}
+
+
+
+
+  @font-face {
+  font-family: "Avenir Next";
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: url("//fba8eb-b5.myshopify.com/cdn/fonts/avenir_next/avenirnext_n5.972a96b7a049f12c89d6d1cd0e1b6c9211f7ba14.woff2?h1=ZmJhOGViLWI1LmFjY291bnQubXlzaG9waWZ5LmNvbQ&h2=dGhlbWVzY2x1Yi54eXo&hmac=7921d4c8254f4e81b15c17cd8c2a9a8b2f3fdfe1a6e7001d40f1dc0f8bae770e") format("woff2"),
+       url("//fba8eb-b5.myshopify.com/cdn/fonts/avenir_next/avenirnext_n5.9e88d20fa9eb66ba268ac60ab013006ef69a310a.woff?h1=ZmJhOGViLWI1LmFjY291bnQubXlzaG9waWZ5LmNvbQ&h2=dGhlbWVzY2x1Yi54eXo&hmac=e0dd1ff399b3164154e41c9d62d2a7b1e2adb84ab1be4d15348255d8bf1f38e0") format("woff");
+}
+
+
+
+
+
+
+
+  @font-face {
+  font-family: "Avenir Next";
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+  src: url("//fba8eb-b5.myshopify.com/cdn/fonts/avenir_next/avenirnext_i4.f1583d9f457b68e44fbda187a48b4096d547d7f4.woff2?h1=ZmJhOGViLWI1LmFjY291bnQubXlzaG9waWZ5LmNvbQ&h2=dGhlbWVzY2x1Yi54eXo&hmac=02c96e48efba8a88158dbed6eb20f08cc74db942dcaa40380f967b48c3702001") format("woff2"),
+       url("//fba8eb-b5.myshopify.com/cdn/fonts/avenir_next/avenirnext_i4.67fb53a3e0351125941146246183577ae8d8bf23.woff?h1=ZmJhOGViLWI1LmFjY291bnQubXlzaG9waWZ5LmNvbQ&h2=dGhlbWVzY2x1Yi54eXo&hmac=8957bc5fcfefe7714e1a202fb0fa313b553361510cff6bcec85c8f3bcdfc1d75") format("woff");
+}
+
+
+
+  @font-face {
+  font-family: "Avenir Next";
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+  src: url("//fba8eb-b5.myshopify.com/cdn/fonts/avenir_next/avenirnext_i5.2d1a6d537e5b485482d6bcca34a56cc10d441a55.woff2?h1=ZmJhOGViLWI1LmFjY291bnQubXlzaG9waWZ5LmNvbQ&h2=dGhlbWVzY2x1Yi54eXo&hmac=baf772c7ef1649d84ac547d6814b29ecd97fa9cf3988c419f62a1263dd750344") format("woff2"),
+       url("//fba8eb-b5.myshopify.com/cdn/fonts/avenir_next/avenirnext_i5.fcfa37c68ca483c41031623bfae4701d99bb4b95.woff?h1=ZmJhOGViLWI1LmFjY291bnQubXlzaG9waWZ5LmNvbQ&h2=dGhlbWVzY2x1Yi54eXo&hmac=97f0728b018a7910f2d93c959f4a79412b113c4387e3a1dbf067248881710a39") format("woff");
+}
+
+
