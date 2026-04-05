@@ -133,7 +133,7 @@
         "text_ewFMMy": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>Make an announcement</strong> | More info</p>"
+            "text": "<p>Simple solutions,Real results</p>"
           }
         }
       },
@@ -189,7 +189,7 @@
         "text_hf369G": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>Make an announcement</strong> | More info</p>"
+            "text": "<p><strong>Designed for your everyday confidence.</strong></p>"
           }
         }
       },
@@ -211,29 +211,37 @@
         "text_93qiPe": {
           "type": "text",
           "settings": {
-            "title": "Frequently asked question",
-            "content": "<p>Share details about your shipping policies, item returns, or customer service.</p>"
+            "title": "How long does shipping take?",
+            "content": "<p>Shipping usually takes <strong>3–7 business days</strong>, depending on your location.</p>"
           }
         },
         "text_8fHjHN": {
           "type": "text",
           "settings": {
-            "title": "Frequently asked question",
-            "content": "<p>Share details about your shipping policies, item returns, or customer service.</p>"
+            "title": "Do you offer cash on delivery?",
+            "content": "<p>Yes, we offer <strong>Cash on Delivery (COD)</strong> for your convenience.</p>"
           }
         },
         "text_n8dVX3": {
           "type": "text",
           "settings": {
-            "title": "Frequently asked question",
-            "content": "<p>Share details about your shipping policies, item returns, or customer service.</p>"
+            "title": "Are your products safe to use?",
+            "content": "<p>Absolutely. We select products that are <strong>safe, tested, and suitable for everyday use</strong>.</p>"
+          }
+        },
+        "text_Nnz9i3": {
+          "type": "text",
+          "settings": {
+            "title": "How can I contact customer support?",
+            "content": "<p>You can reach us anytime via<strong> WhatsApp</strong> and we’ll be happy to assist you.</p>"
           }
         }
       },
       "block_order": [
         "text_93qiPe",
         "text_8fHjHN",
-        "text_n8dVX3"
+        "text_n8dVX3",
+        "text_Nnz9i3"
       ],
       "name": "Accordion group",
       "settings": {
