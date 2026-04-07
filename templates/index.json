@@ -13,6 +13,7 @@
       "type": "section-hero",
       "settings": {
         "image": "shopify://shop_images/5956207719670811890.jpg",
+        "mobile_image": "shopify://shop_images/5956207719670811890.jpg",
         "height": "use_screen_two_thirds",
         "overlay_opacity": 15,
         "overlay_color": "#000000",
