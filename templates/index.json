@@ -48,6 +48,13 @@
             "padding_bottom": 40
           }
         },
+        "text_eM448g": {
+          "type": "text",
+          "settings": {
+            "title": "<p>LIMITED OFFER ! ORDER NOW !</p>",
+            "padding_bottom": 20
+          }
+        },
         "liquid_xixWGJ": {
           "type": "liquid",
           "settings": {
@@ -100,6 +107,7 @@
       "block_order": [
         "title_qLnLP3",
         "price_nDX3Ef",
+        "text_eM448g",
         "liquid_xixWGJ",
         "variant_selectors_RrJJU7",
         "subscription_hMLjd3",
