@@ -12,8 +12,7 @@
     "hero": {
       "type": "section-hero",
       "settings": {
-        "image": "shopify://shop_images/5956207719670811890_f0d50e67-f444-4cda-a5d2-a582254b575b.jpg",
-        "mobile_image": "shopify://shop_images/5956207719670811859_1.jpg",
+        "image": "shopify://shop_images/5985536079945206941.jpg",
         "height": "use_screen_two_thirds",
         "overlay_opacity": 15,
         "overlay_color": "#000000",
@@ -117,7 +116,7 @@
       ],
       "name": "Featured product",
       "settings": {
-        "title": "vacuum blackhead pore cleaner",
+        "title": "Teeth Whitening Corrector Serum",
         "home_product": "vacuum-pore-cleaner",
         "layout": "thumbnails-below@slides",
         "image_width": "wide",
