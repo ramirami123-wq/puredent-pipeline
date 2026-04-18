@@ -117,7 +117,7 @@
       "name": "Featured product",
       "settings": {
         "title": "Teeth Whitening Corrector Serum",
-        "home_product": "vacuum-pore-cleaner",
+        "home_product": "teeth-whitening",
         "layout": "thumbnails-below@slides",
         "image_width": "wide",
         "image_spacing": 10,
@@ -163,14 +163,14 @@
         "heading_trFE3w": {
           "type": "heading",
           "settings": {
-            "heading": "Lumeria beauty",
+            "heading": "Pure Smile",
             "text_size": 8
           }
         },
         "text_tCyQLw": {
           "type": "text",
           "settings": {
-            "text": "<p>your trusted destination for smart, effective everyday essentials that make life easier and more enjoyable.</p><p>We believe that great products shouldn’t be complicated. That’s why we carefully select items that combine quality, convenience, and real results. Whether it’s skincare tools, lifestyle accessories, or problem-solving gadgets, everything we offer is chosen with one goal in mind: helping you feel confident, comfortable, and in control of your daily routine.</p><p>Our mission is simple—deliver value, reliability, and a smooth shopping experience from start to finish. We’re here to bring you products you’ll actually use and love.</p>",
+            "text": "<p>your trusted destination for smart, effective everyday essentials that make life easier and more enjoyable.</p><p>We believe that great products shouldn’t be complicated. That’s why we carefully select items that combine quality, convenience, and real results. Whether it’s beauty tools, lifestyle accessories, or problem-solving gadgets, everything we offer is chosen with one goal in mind: helping you feel confident, comfortable, and in control of your daily routine.</p><p>Our mission is simple—deliver value, reliability, and a smooth shopping experience from start to finish. We’re here to bring you products you’ll actually use and love.</p>",
             "text_size": 4,
             "text_columns": 1
           }
