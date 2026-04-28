@@ -44,7 +44,7 @@
         "liquid_36mWrE": {
           "type": "liquid",
           "settings": {
-            "custom_liquid": "<div style=\"padding: 12px; text-align: left; background-color: #f9f9f9; font-size: 15px; border-radius: 12px; margin-top: 10px; margin-bottom: 10px; line-height: 1.6;\">\n<span style=\"font-weight: bold;\">✨ Deep Pore Cleansing</span> – Effectively removes blackheads, whiteheads, and excess oil from clogged pores.<br><br>\n<span style=\"font-weight: bold;\">⚙️ Suitable for All Skin Types</span> – Adjustable suction levels for gentle or powerful extraction, even for sensitive skin.<br><br>\n<span style=\"font-weight: bold;\">💧 Smooth & Clear Skin</span> – Leaves your skin feeling fresh, clean, and visibly more refined.\n</div>"
+            "custom_liquid": "<div style=\"padding: 12px; text-align: left; background-color: #f9f9f9; font-size: 15px; border-radius: 12px; margin-top: 10px; margin-bottom: 10px; line-height: 1.6;\">\n<span style=\"font-weight: bold;\">✨ Brighter Whiter Smile</span> – Effectively reduces stains and discoloration to restore your natural tooth whiteness.<br><br>\n<span style=\"font-weight: bold;\">⚙️ Gentle on Teeth</span> – Safe formula suitable for daily use, even for sensitive teeth and gums.<br><br>\n<span style=\"font-weight: bold;\">💧 Fresh & Clean Feeling</span> – Leaves your mouth feeling fresh, clean, and your smile visibly more radiant.\n</div>"
           }
         },
         "variants": {
@@ -209,9 +209,9 @@
         "text": {
           "type": "text",
           "settings": {
-            "kicker": "Deep Clean for Clear Skin",
+            "kicker": "Radiant White Smile",
             "title": "",
-            "text": "<p>This electric pore remover targets blackheads, whiteheads, and excess oil, helping to unclog pores and reveal visibly cleaner, smoother skin after every use.</p>",
+            "text": "<p>Achieve a brighter, more confident smile by reducing stains and discoloration. This formula enhances your natural tooth color for a clean, polished look.</p>",
             "font_size": 5,
             "text_columns": 1,
             "align_text": "text-left",
@@ -245,7 +245,7 @@
         "text_43W6wR": {
           "type": "text",
           "settings": {
-            "text": "<p>Clear pores, confident glow</p>"
+            "text": "<p>A brighter smile is the simplest way to boost your confidence</p>"
           }
         }
       },
@@ -267,9 +267,9 @@
         "text": {
           "type": "text",
           "settings": {
-            "kicker": "Gentle Yet Powerful Care",
+            "kicker": "Gentle Yet Effective Care",
             "title": "",
-            "text": "<p>With adjustable suction levels and multiple heads, it delivers effective results while staying gentle on your skin—perfect for safe, at-home skincare.</p>",
+            "text": "<p>Designed for daily use, this whitening solution is safe on teeth and gums while delivering visible results, leaving your smile fresh and naturally radiant.</p>",
             "font_size": 5,
             "text_columns": 1,
             "align_text": "text-left",
@@ -321,7 +321,7 @@
         "text_U84x7A": {
           "type": "text",
           "settings": {
-            "text": "<p>Deep clean, smooth skin, real results</p>"
+            "text": "<p>Clean, white teeth—because your smile deserves to shine</p>"
           }
         }
       },
@@ -373,19 +373,19 @@
             "others_column_label": "Others",
             "show_badge": false,
             "badge_text": "Best value",
-            "feature_1": "Deep Pore Cleansing",
+            "feature_1": "Effective Whitening",
             "us_value_1": "check",
             "others_value_1": "cross",
-            "feature_2": "Adjustable Suction Levels",
+            "feature_2": "Safe for Enamel",
             "us_value_2": "check",
             "others_value_2": "cross",
-            "feature_3": "Multiple Suction Heads",
+            "feature_3": "Suitable for Sensitive Teeth",
             "us_value_3": "check",
             "others_value_3": "cross",
-            "feature_4": "Safe & Skin-Friendly",
+            "feature_4": "Long-Lasting Results",
             "us_value_4": "check",
             "others_value_4": "cross",
-            "feature_5": "Portable & Easy to Use",
+            "feature_5": "Easy to Use",
             "us_value_5": "check",
             "others_value_5": "cross",
             "feature_6": "",
@@ -410,7 +410,7 @@
             "badge_bg_color": "#ffffff",
             "badge_text_color": "#000000",
             "checkmark_color": "#008060",
-            "cross_color": "#D82C0D",
+            "cross_color": "#d82c0d",
             "border_radius": 8,
             "header_text_size": 16,
             "body_text_size": 15
@@ -429,45 +429,45 @@
         "text_TK7FzL": {
           "type": "text",
           "settings": {
-            "title": "Is it safe for all skin types?",
-            "content": "<p>Yes, it is designed to be safe for all skin types. Just start with the lowest suction level, especially if you have sensitive skin.</p>"
+            "title": "How long does it take to see results?",
+            "content": "<p>Most users notice a brighter smile within a few days, with more visible results after consistent use.</p>"
           }
         },
         "text_LbRJbx": {
           "type": "text",
           "settings": {
-            "title": "Does it hurt?",
-            "content": "<p>No, the device uses gentle suction technology. When used correctly, it is painless and comfortable.</p>"
+            "title": "Is it safe for sensitive teeth?",
+            "content": "<p>Yes, the formula is designed to be gentle and suitable for sensitive teeth and gums.</p>"
+          }
+        },
+        "text_pi4FQ3": {
+          "type": "text",
+          "settings": {
+            "title": "How often should I use it?",
+            "content": "<p>For best results, use it daily as part of your oral care routine.</p>"
           }
         },
         "text_8Efrft": {
           "type": "text",
           "settings": {
-            "title": "How often should I use it?",
-            "content": "<p>It’s recommended to use it <strong>1–2 times per week</strong> to avoid over-irritating your skin.</p>"
+            "title": "Does it damage enamel?",
+            "content": "<p>No, when used as directed, it is safe and does not harm tooth enamel.</p>"
           }
         },
         "text_7fxR7Y": {
           "type": "text",
           "settings": {
-            "title": "Can it remove blackheads completely?",
-            "content": "<p>It helps reduce and remove blackheads and impurities effectively, but regular use and proper skincare will give the best results.</p>"
-          }
-        },
-        "text_LRAQhG": {
-          "type": "text",
-          "settings": {
-            "title": "Do I need to prepare my skin before using it?",
-            "content": "<p>Yes, for best results, use it after a warm shower or steam your face to open up the pores.</p>"
+            "title": "Can I use it with other dental products?",
+            "content": "<p>Yes, it works well alongside your regular toothpaste and oral hygiene routine.</p>"
           }
         }
       },
       "block_order": [
         "text_TK7FzL",
         "text_LbRJbx",
+        "text_pi4FQ3",
         "text_8Efrft",
-        "text_7fxR7Y",
-        "text_LRAQhG"
+        "text_7fxR7Y"
       ],
       "name": "Accordion group",
       "settings": {
